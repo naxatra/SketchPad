@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title>
+        sketchpad
+    </title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="./lib/p5.js"></script>
+    <script src="./lib/p5.dom.js"></script>
+    <script src="./assets/board.js"></script>
+
+</head>
+
+<body>
+    <h1>SKETCHPAD</h1>
+    <code>
+        - written by
+        <a href="https://facebook.com/0naaxi">Naxatra</a>
+        by help of
+        <a href="https://facebook.com/49yatriyaan.love">XinYaanZyoy</a>
+    </code>
+    <div>
+        <button id="download" onClick="save(can,'sketchpad.jpg');">Download your sketch</button>
+        <button id="Eraser" onclick="brush_red = erase_red;
+                                     brush_green = erase_green;
+                                     brush_blue = erase_blue">
+            Eraser
+        </button>
+        <div id="board" class="pallet">
+            <ul>
+                <li>
+                    <h3 style="color: white">
+                        Board Color
+                    </h3>
+                </li>
+                <li>
+                    <button id="RED" onclick="bg_red = 255;
+                                              bg_green = 0;
+                                              bg_blue = 0;
+                                              newcolor = true;
+                                              erase_red = 255;
+                                              erase_green = 0;
+                                              erase_blue = 0;">
+                    </button>
+                </li>
+                <li>
+                    <button id="BLUE" onclick="bg_red = 46;
+                                               bg_green = 19;
+                                               bg_blue = 204;
+                                               newcolor = true;
+                                               erase_red = 46;
+                                               erase_green = 19;
+                                               erase_blue = 204;">
+                    </button>
+                </li>
+                <li>
+                    <button id="GREEN" onclick="bg_red = 3;
+                                                bg_green = 248;
+                                                bg_blue = 3;
+                                                newcolor = true;
+                                                erase_red = 3;
+                                                erase_green = 248;
+                                                erase_blue = 3;">
+                    </button>
+                </li>
+                <li>
+                    <button id="PINK" onclick="bg_red = 236;
+                                               bg_green = 8;
+                                               bg_blue = 168;
+                                               newcolor = true;
+                                               erase_red = 236;
+                                               erase_green = 8;
+                                               erase_blue = 168;">
+                    </button>
+                </li>
+                <li>
+                    <button id="PURPLE" onclick="bg_red = 111;
+                                                 bg_green = 0;
+                                                 bg_blue = 222;
+                                                 newcolor = true;
+                                                 erase_red = 111;
+                                                 erase_green = 0;
+                                                 erase_blue = 222;">
+                    </button>
+                </li>
+                <li>
+                    <button id="GREY" onclick="bg_red = 111;
+                                               bg_green = 111;
+                                               bg_blue = 111;
+                                               newcolor = true;
+                                               erase_red = 111;
+                                               erase_green = 111;
+                                               erase_blue = 111;">
+                    </button>
+                </li>
+                <li>
+                    <button id="BLACK" onclick="bg_red = 0;
+                                                bg_green = 0;
+                                                bg_blue = 0;
+                                                newcolor = true;
+                                                erase_red = 0;
+                                                erase_green = 0;
+                                                erase_blue = 0;">
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div id="brush" class="pallet">
+            <ul>
+                <li>
+                    <h3 style="color: white">
+                        Brush Color
+                    </h3>
+                </li>
+                <li>
+                    <button id="WHITE" onclick="brush_red = 255;
+                                                brush_green = 255;
+                                                brush_blue = 255;">
+                    </button>
+                </li>
+                <li>
+                    <button id="BLACK" onclick="brush_red = 0;
+                                                brush_green = 0;
+                                                brush_blue = 0;">
+                    </button>
+                </li>
+                <li>
+                    <button id="GREY" onclick="brush_red = 111;
+                                               brush_green = 111;
+                                               brush_blue = 111;">
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

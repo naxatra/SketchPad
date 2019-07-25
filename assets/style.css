@@ -1,0 +1,84 @@
+html{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body{
+    overflow: hidden;
+}
+.pallet{
+    background-color: transparent;
+    width: 150px;
+}
+
+#board{
+    margin: -380px 0vw;
+}
+
+#brush{
+    margin: -380px 88vw;
+}
+
+#download{
+    margin: 25px 1400px;
+    background-color: brown;
+}
+
+#eraser{
+    margin: 25px 1400px;
+}
+
+code{
+    margin: 20px 60vw;
+    font-size: 18px;
+    color: white;
+}
+
+h1{
+    margin: 20px 45vw;
+    color: white;
+    font-family: cursive;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    width: 96px;
+    height: 96px;
+    border-radius: 25%;
+    box-shadow: 5px 5px 5px black;
+}
+button:focus{
+    outline: 0;
+}
+button:hover{
+    cursor: pointer;
+}
+
+#RED{
+    background-color: rgb(255, 0, 0);
+}
+#BLUE{
+    background-color: rgb(46, 19, 204);
+}
+#GREEN{
+    background-color: rgb(3, 248, 3);
+}
+#PINK{
+    background-color: rgb(236, 8, 168);
+}
+#PURPLE{
+    background-color: rgb(111, 0, 222);
+}
+#GREY{
+    background-color: rgb(111, 111, 111);
+}
+#BLACK{
+    background-color: rgb(0, 0, 0);
+}
